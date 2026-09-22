@@ -41,7 +41,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl md:text-2xl text-muted max-w-2xl lg:mx-0 mx-auto mb-10 leading-relaxed"
             >
-              A <span className="text-foreground font-semibold">Software Development Engineer</span> specialized in building scalable, fault-tolerant distributed systems and cloud-native architectures.
+              An <span className="text-foreground font-semibold">{resumeData.role}</span> specialized in building predictive models, Generative AI applications, and scalable machine learning systems.
             </motion.p>
 
             <motion.div
