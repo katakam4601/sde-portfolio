@@ -23,7 +23,7 @@ export default function Hero() {
               className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-medium mb-6"
             >
               <Terminal className="w-3 h-3" />
-              <span>Available for SDE Roles</span>
+              <span>Available for AI/ML Roles</span>
             </motion.div>
 
             <motion.h1
