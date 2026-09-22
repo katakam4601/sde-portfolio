@@ -1,16 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Server, Cloud, Database, Cpu } from "lucide-react";
+import { Code, Brain, Cpu, Bot, Cloud, Database } from "lucide-react";
 import { resumeData } from "@/data/resume";
 
 export default function Skills() {
   const categories = [
-    { title: "Languages", icon: Code, color: "text-blue-500", items: resumeData.skills.languages },
-    { title: "Frameworks", icon: Server, color: "text-purple-500", items: resumeData.skills.frameworks },
-    { title: "Cloud & DevOps", icon: Cloud, color: "text-sky-500", items: resumeData.skills.cloudDevOps },
-    { title: "Databases", icon: Database, color: "text-emerald-500", items: resumeData.skills.databases },
-    { title: "Core Concepts", icon: Cpu, color: "text-orange-500", items: resumeData.skills.concepts },
+    { title: "Programming & Data", icon: Code, color: "text-blue-500", items: resumeData.skills["Programming & Data"] },
+    { title: "Machine Learning", icon: Brain, color: "text-purple-500", items: resumeData.skills["Machine Learning"] },
+    { title: "Deep Learning & NLP", icon: Cpu, color: "text-emerald-500", items: resumeData.skills["Deep Learning & NLP"] },
+    { title: "GenAI & LLMs", icon: Bot, color: "text-orange-500", items: resumeData.skills["GenAI & LLMs"] },
+    { title: "MLOps & Cloud", icon: Cloud, color: "text-sky-500", items: resumeData.skills["MLOps & Cloud"] },
+    { title: "Databases & Tools", icon: Database, color: "text-gray-400", items: resumeData.skills["Databases & Tools"] },
   ];
 
   return (
