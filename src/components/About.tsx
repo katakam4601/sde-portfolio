@@ -30,8 +30,8 @@ export default function About() {
               <p className="text-xs uppercase tracking-wider text-muted">Years Exp</p>
             </div>
             <div className="p-4 rounded-xl bg-card-bg border border-border-color">
-              <h4 className="text-secondary font-bold text-2xl mb-1">10+</h4>
-              <p className="text-xs uppercase tracking-wider text-muted">APIs Built</p>
+              <h4 className="text-secondary font-bold text-2xl mb-1">15+</h4>
+              <p className="text-xs uppercase tracking-wider text-muted">Models Deployed</p>
             </div>
           </div>
         </motion.div>
@@ -56,19 +56,25 @@ export default function About() {
                 <h3 className="text-xl font-bold">{edu.institution}</h3>
                 <p className="text-secondary font-medium mb-2">{edu.degree}</p>
                 <div className="flex flex-wrap gap-y-2 gap-x-4 text-sm text-muted mb-3">
-                  <span className="flex items-center space-x-1">
-                    <MapPin className="w-3 h-3" />
-                    <span>{edu.location}</span>
-                  </span>
-                  <span className="flex items-center space-x-1">
-                    <Calendar className="w-3 h-3" />
-                    <span>{edu.duration}</span>
-                  </span>
-                  <span className="flex items-center space-x-1 font-semibold text-foreground">
-                    <span>GPA: {edu.gpa}</span>
-                  </span>
+                  {edu.location && (
+                    <span className="flex items-center space-x-1">
+                      <MapPin className="w-3 h-3" />
+                      <span>{edu.location}</span>
+                    </span>
+                  )}
+                  {edu.duration && (
+                    <span className="flex items-center space-x-1">
+                      <Calendar className="w-3 h-3" />
+                      <span>{edu.duration}</span>
+                    </span>
+                  )}
+                  {edu.gpa && (
+                    <span className="flex items-center space-x-1 font-semibold text-foreground">
+                      <span>GPA: {edu.gpa}</span>
+                    </span>
+                  )}
                 </div>
-                {edu.coursework && (
+                {edu.coursework && edu.coursework.length > 0 && (
                   <div className="flex flex-wrap gap-2">
                     {edu.coursework.map((course, j) => (
                       <span key={j} className="text-[10px] px-2 py-0.5 rounded-md bg-white/5 border border-white/10">
