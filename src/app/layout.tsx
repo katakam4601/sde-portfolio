@@ -13,8 +13,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Katakam Saikumar | Software Development Engineer",
-  description: "Portfolio of Katakam Saikumar, an experienced SDE specializing in scalable distributed systems, cloud-native architectures, and full-stack development.",
+  title: "Katakam Saikumar | AI/ML Engineer",
+  description: "Portfolio of Katakam Saikumar, an experienced AI/ML Engineer specializing in machine learning, Generative AI, and scalable enterprise LLM systems.",
 };
 
 export default function RootLayout({
